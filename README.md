@@ -4,6 +4,7 @@
 
 ## <a name='TOC'>Table of Contents</a>
 
+1. [Whitespace](#whitespace)
 1. [Naming Conventions](#naming-conventions)
 1. [Browsers](#browsers)
 1. [Media queries](#media-queries)
@@ -12,6 +13,148 @@
 1. [Extends](#extends)
 1. [Includes](#includes)
 1. [License](#license)
+
+## <a name='whitespace'>Whitespace</a>
+
+- Use soft tabs set to 2 spaces
+  
+    ```scss
+    // bad
+    .selector{
+    ∙∙∙∙property: value;
+    } 
+
+    // bad
+    .selector{
+    ∙property: value;
+    } 
+
+    // good
+    .selector{
+    ∙∙property: value;
+    } 
+    ```
+
+- Indent every level (nesting, selector and property)
+
+    ```scss
+    // bad
+    .selector{
+    color: red;
+    }
+
+    // bad
+    .selector{
+    .nesting{
+    color: red;
+    }
+    }
+
+    // good
+    .selector{
+      .nesting{
+        color: red
+      }
+    }
+    ```
+
+- Do not place space before the leading brace
+
+    ```scss
+    // bad
+    .selector {
+      // ...    
+    }
+
+    // good
+    .selector{
+
+    }
+    ```
+
+- Only write one selector per line
+
+  ```scss
+  // bad
+  .selector, .selector2, .selector3{
+
+  }
+
+  // good
+  .selector,
+  .selector2,
+  .selector3{
+
+  }
+  ```
+
+- Separate rules by exactly one empty line
+  
+  ```scss
+  // bad
+  .selector{
+
+  }
+  .selector{
+
+  }
+
+
+  .selector{
+
+  }
+
+  // good
+  .selector{
+
+  }
+
+  .selector{
+  
+  }
+
+  .selector{
+  
+  }  
+  ```
+
+- Only one property per line with a `;` directly after the property value
+
+  ```scss
+  // bad
+  .selector{
+    color: red; background: white;
+    border: 1px solid red ;
+  }
+
+  // good
+  .selector{
+    color: red;
+    background: white;
+    border: 1px solid red;
+  }
+  ```
+
+- Add exactly 1 space between the `:` and the property value;
+
+  ```scss
+  // bad
+  .selector{
+    color : red;
+  }
+
+  // bad
+  .selector{
+    color:red;
+  }
+
+  // good
+  .selector {
+    color: red;
+  }
+  ```
+
+- 
 
 ## <a name='naming-conventions'>Naming conventions</a>
 
