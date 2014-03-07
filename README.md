@@ -176,7 +176,7 @@
     ```
 - Use full names instead of abbreviations.
 
-    ```css
+    ```scss
     // bad
     .btn{
 
