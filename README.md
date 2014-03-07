@@ -30,6 +30,8 @@
     </div>
     ```
 
+**[[⬆]](#TOC)**
+
 ## <a name='browser'>Browsers</a>
 
 - Don't do manual vendorprefixing, use a tool like [autoprefixer](https://github.com/ai/autoprefixer) or [prefix-free](http://leaverou.github.io/prefixfree/. 
@@ -38,9 +40,13 @@
 
 - Only target IE < 9 with conditional comments.
 
+**[[⬆]](#TOC)**
+
 ## <a name='variables'>Variables</a>
 
 TODO
+
+**[[⬆]](#TOC)**
 
 ## <a name='nesting'>Nesting</a>
 
@@ -109,6 +115,8 @@ TODO
 
     ```
 
+**[[⬆]](#TOC)**
+
 ## <a name='extends'>Extends</a>
 
 - Make abstract extends with `%name` instead of extending actual classes.
@@ -137,9 +145,13 @@ TODO
     }
     ```
 
+**[[⬆]](#TOC)**
+
 ## <a name='includes'>Includes</a>
 
 TODO
+
+**[[⬆]](#TOC)**
 
 ## <a name='license'>License</a>
 
