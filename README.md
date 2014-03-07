@@ -46,7 +46,7 @@ TODO
       color: #fff;
 
       .weather__icon{
-        ...
+        // ...
       }
     }
 
@@ -57,7 +57,10 @@ TODO
       }
 
       .weather__icon{
-        ...
+        // ...
+      }
+    }
+    ```
 
 - Nest up to a maximum of 2 levels. Too many levels of nesting make especially longer blocks of code unreadable.
 
