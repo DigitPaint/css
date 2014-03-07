@@ -137,11 +137,11 @@ TODO
     }
 
     .page{
-      @extend %%centered-page;
+      @extend %centered-page;
     }
 
     .page--home{
-      @extend %%centered-page;
+      @extend %centered-page;
     }
     ```
 
