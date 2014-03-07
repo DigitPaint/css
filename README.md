@@ -29,6 +29,19 @@
       <p class="weather__description">Sunny!</p>
     </div>
     ```
+- Use full names instead of abbreviations.
+
+    ```css
+    // bad
+    .btn{
+
+    }
+
+    // good
+    .button{
+
+    }
+    ```
 
 **[[⬆]](#TOC)**
 
