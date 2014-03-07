@@ -54,7 +54,7 @@
     // good
     .selector{
       .nesting{
-        color: red
+        color: red;
       }
     }
     ```
@@ -64,12 +64,10 @@
     ```scss
     // bad
     .selector {
-      // ...    
     }
 
     // good
     .selector{
-
     }
     ```
 
@@ -78,14 +76,12 @@
   ```scss
   // bad
   .selector, .selector2, .selector3{
-
   }
 
   // good
   .selector,
   .selector2,
   .selector3{
-
   }
   ```
 
@@ -94,28 +90,22 @@
   ```scss
   // bad
   .selector{
-
   }
   .selector{
-
   }
 
 
   .selector{
-
   }
 
   // good
   .selector{
-
   }
 
   .selector{
-  
   }
 
   .selector{
-  
   }  
   ```
 
@@ -180,12 +170,10 @@
     ```scss
     // bad
     .btn{
-
     }
 
     // good
     .button{
-
     }
     ```
 
@@ -194,17 +182,14 @@
     ```scss
     // bad
     .page_header{
-
     }
 
     // bad
     .pageHeader{
-
     }
 
     // good
     .page-header{
-
     }
 
     ```
@@ -291,14 +276,12 @@ TODO
     // bad
     .ice-cream{
       .desert &{
-        // ...
       }
     }
 
     // good
     .desert{
       .ice-cream{
-
       }
     }
 
@@ -313,7 +296,6 @@ TODO
     ```scss
     // bad
     .page{
-      ...
     }
 
     .page--home{
@@ -322,7 +304,6 @@ TODO
 
     // good
     %centered-page{
-      ...
     }
 
     .page{
