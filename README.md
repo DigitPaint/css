@@ -6,6 +6,7 @@
 
 1. [Whitespace](#whitespace)
 1. [Naming Conventions](#naming-conventions)
+1. [Comments](#comments)
 1. [Browsers](#browsers)
 1. [Media queries](#media-queries)
 1. [Variables](#variables)
@@ -207,6 +208,12 @@
     }
 
     ```
+
+**[[⬆]](#TOC)**
+
+## <a name='comments'>Comments</a>
+
+TODO
 
 **[[⬆]](#TOC)**
 
