@@ -92,7 +92,7 @@ TODO
 
 - Only point down with the `&` selector in a nesting, never up
 
-    ```scsss
+    ```scss
     // bad
     .ice-cream{
       .desert &{
