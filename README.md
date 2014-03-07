@@ -188,6 +188,26 @@
     }
     ```
 
+- Use spinal-case (`.this-is-a-classname`) for class names, do not use uppercase letters in class names
+
+    ```scss
+    // bad
+    .page_header{
+
+    }
+
+    // bad
+    .pageHeader{
+
+    }
+
+    // good
+    .page-header{
+
+    }
+
+    ```
+
 **[[⬆]](#TOC)**
 
 ## <a name='browser'>Browsers</a>
