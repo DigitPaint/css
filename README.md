@@ -30,6 +30,14 @@
     </div>
     ```
 
+## <a name='browser'>Browsers</a>
+
+- Don't do manual vendorprefixing, use a tool like [autoprefixer](https://github.com/ai/autoprefixer) or [prefix-free](http://leaverou.github.io/prefixfree/. 
+
+- Target features, not browsers. Prefer the use of `@supports` if possible, use modernizr otherwise.
+
+- Only target IE < 9 with conditional comments.
+
 ## <a name='variables'>Variables</a>
 
 TODO
