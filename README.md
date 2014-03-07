@@ -58,8 +58,44 @@ TODO
 
       .weather__icon{
         ...
+
+- Nest up to a maximum of 2 levels. Too many levels of nesting make especially longer blocks of code unreadable.
+
+    ```scss
+    // bad
+    .ice-cream{
+      .ice-cream__cone{
+        .ice-cream__cone__wrapper{
+          // ...
+        }
       }
     }
+
+    // good
+    .ice-cream{
+      .ice-cream__cone .ice-cream__cone__wrapper{
+         // ...
+      }
+    }
+    ```
+
+- Only point down with the `&` selector in a nesting, never up
+
+    ```scsss
+    // bad
+    .ice-cream{
+      .desert &{
+        // ...
+      }
+    }
+
+    // good
+    .desert{
+      .ice-cream{
+
+      }
+    }
+
     ```
 
 ## <a name='extends'>Extends</a>
