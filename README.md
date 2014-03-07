@@ -5,6 +5,8 @@
 ## <a name='TOC'>Table of Contents</a>
 
 1. [Naming Conventions](#naming-conventions)
+1. [Browsers](#browsers)
+1. [Media queries](#media-queries)
 1. [Variables](#variables)
 1. [Nesting](#nesting)
 1. [Extends](#extends)
