@@ -1,11 +1,98 @@
 # Digitpaint (S)CSS Style Guide {
 
-*A mostly reasonable approach to CSS and Sass stylehseets*
+*A mostly reasonable approach to CSS and Sass stylesheets*
 
 ## <a name='TOC'>Table of Contents</a>
 
+1. [Naming Conventions](#naming-conventions)
+1. [Variables](#variables)
+1. [Nesting](#nesting)
+1. [Extends](#extends)
+1. [Includes](#includes)
 1. [License](#license)
 
+## <a name='naming-conventions'>Naming conventions</a>
+
+- Use BEM as much as possible (see Harry Robbert's excellend article ["MindBEMding – getting your head ’round BEM syntax"](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) for an introduction)
+
+    ```html
+    <!-- bad -->
+    <div class="weather header">
+      <img src="sunny.png" class="icon">
+      <p class="description">Sunny!</p>
+    </div>
+
+
+    <!-- good -->
+    <div class="weather weather--header">
+      <img src="sunny.png" class="weather__icon">
+      <p class="weather__description">Sunny!</p>
+    </div>
+    ```
+
+## <a name='variables'>Variables</a>
+
+TODO
+
+## <a name='nesting'>Nesting</a>
+
+- Nest based on block name
+
+- Don't mix properties and selectors in a nesting level. Use `&` instead.
+  
+    ```scss
+    // bad
+    .weather{
+      color: #fff;
+
+      .weather__icon{
+        ...
+      }
+    }
+
+    // good
+    .weather{
+      &{
+        color: #fff;
+      }
+
+      .weather__icon{
+        ...
+      }
+    }
+    ```
+
+## <a name='extends'>Extends</a>
+
+- Make abstract extends with `%name` instead of extending actual classes.
+
+    ```scss
+    // bad
+    .page{
+      ...
+    }
+
+    .page--home{
+      @extend .page;
+    }
+
+    // good
+    %centered-page{
+      ...
+    }
+
+    .page{
+      @extend %%centered-page;
+    }
+
+    .page--home{
+      @extend %%centered-page;
+    }
+    ```
+
+## <a name='includes'>Includes</a>
+
+TODO
 
 ## <a name='license'>License</a>
 
