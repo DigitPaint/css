@@ -198,7 +198,8 @@
 
 ## <a name='comments'>Comments</a>
 
-TODO
+- Comment where necessary
+- Write comments in proper English. Translate where necessary.
 
 **[[⬆]](#TOC)**
 
