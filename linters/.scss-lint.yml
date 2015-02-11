@@ -1,5 +1,8 @@
 # Default application configuration that all configurations inherit from.
 linters:
+  BangFormat:
+    enabled: true
+
   BorderZero:
     enabled: true
 
@@ -12,13 +15,21 @@ linters:
   Comment:
     enabled: true
 
+  Compass::*:
+    enabled: false
+
   DebugStatement:
     enabled: true
 
   DeclarationOrder:
     enabled: true
+    severity: warning
 
   DuplicateProperty:
+    enabled: true
+    severity: warning
+
+  ElsePlacement:
     enabled: true
 
   EmptyLineBetweenBlocks:
@@ -27,37 +38,83 @@ linters:
   EmptyRule:
     enabled: true
 
-  HexFormat:
+  FinalNewline:
+    enabled: false
+
+  HexLength:
     enabled: true
 
-  IdWithExtraneousSelector:
+  HexNotation:
+    enabled: true
+
+  HexValidation:
+    enabled: true
+
+  IdSelector:
+    enabled: true
+
+  ImportPath:
+    enabled: true
+
+  ImportantRule:
     enabled: true
 
   Indentation:
     enabled: true
+    character: space
     width: 2
 
   LeadingZero:
     enabled: true
+    style: include_zero
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: false
 
   NameFormat:
     enabled: true
 
+  NestingDepth:
+    enabled: true
+    max_depth: 2
+
   PlaceholderInExtend:
     enabled: true
 
+  PropertyCount:
+    enabled: false
+
   PropertySortOrder:
-    enabled: true
+    enabled: false
 
   PropertySpelling:
     enabled: true
     extra_properties: []
 
+  QualifyingElement:
+    enabled: true
+
   SelectorDepth:
     enabled: true
-    max_depth: 2
+    max_depth: 3
+    severity: warning
+
+  SelectorFormat:
+    enabled: true
+    ignored_types:
+      - attribute
+      - element
+      - id
+      - placeholder
+    convention: hyphenated_BEM
+    severity: warning
 
   Shorthand:
+    enabled: true
+    severity: warning
+
+  SingleLinePerProperty:
     enabled: true
 
   SingleLinePerSelector:
@@ -81,16 +138,38 @@ linters:
 
   StringQuotes:
     enabled: true
-    style: single_quotes # or double_quotes
+    style: single_quotes
 
-  TrailingSemicolonAfterPropertyValue:
+  TrailingSemicolon:
     enabled: true
 
+  TrailingZero:
+    enabled: true
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: false
+
+  UrlFormat:
+    enabled: true
+    severity: warning
+
   UrlQuotes:
+    enabled: false
+
+  VariableForProperty:
+    enabled: true
+    properties:
+      - color
+      - font
+      - font-size
+      - background-color
+    severity: warning
+
+  VendorPrefixes:
     enabled: true
 
   ZeroUnit:
     enabled: true
-
-  Compass::*:
-    enabled: false
