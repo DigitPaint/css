@@ -2,6 +2,13 @@
 
 *A mostly reasonable approach to CSS and Sass stylesheets*
 
+High level guidelines:
+
+* Be consistent.
+* Don't rewrite existing code to follow this guide.
+* Don't violate a guideline without a good reason.
+* A reason is good when you can convince a teammate.
+
 ## <a name='TOC'>Table of Contents</a>
 
 1. [Whitespace](#whitespace)
@@ -21,17 +28,17 @@
   
     ```scss
     // bad
-    .selector{
+    .selector {
     ∙∙∙∙property: value;
     } 
 
     // bad
-    .selector{
+    .selector {
     ∙property: value;
     } 
 
     // good
-    .selector{
+    .selector {
     ∙∙property: value;
     } 
     ```
@@ -40,34 +47,34 @@
 
     ```scss
     // bad
-    .selector{
+    .selector {
     color: red;
     }
 
     // bad
-    .selector{
-    .nesting{
+    .selector {
+    .nesting {
     color: red;
     }
     }
 
     // good
-    .selector{
-      .nesting{
+    .selector {
+      .nesting {
         color: red;
       }
     }
     ```
 
-- Do not place space before the leading brace
+- Place a space before the leading brace
 
     ```scss
     // bad
-    .selector {
+    .selector{
     }
 
     // good
-    .selector{
+    .selector {
     }
     ```
 
@@ -75,13 +82,13 @@
 
   ```scss
   // bad
-  .selector, .selector2, .selector3{
+  .selector, .selector2, .selector3 {
   }
 
   // good
   .selector,
   .selector2,
-  .selector3{
+  .selector3 {
   }
   ```
 
@@ -89,23 +96,23 @@
   
   ```scss
   // bad
-  .selector{
+  .selector {
   }
-  .selector{
+  .selector  {
   }
 
 
-  .selector{
+  .selector {
   }
 
   // good
-  .selector{
+  .selector {
   }
 
-  .selector{
+  .selector {
   }
 
-  .selector{
+  .selector {
   }  
   ```
 
@@ -113,13 +120,13 @@
 
   ```scss
   // bad
-  .selector{
+  .selector {
     color: red; background: white;
     border: 1px solid red ;
   }
 
   // good
-  .selector{
+  .selector {
     color: red;
     background: white;
     border: 1px solid red;
@@ -130,12 +137,12 @@
 
   ```scss
   // bad
-  .selector{
+  .selector {
     color : red;
   }
 
   // bad
-  .selector{
+  .selector {
     color:red;
   }
 
@@ -169,11 +176,11 @@
 
     ```scss
     // bad
-    .btn{
+    .btn {
     }
 
     // good
-    .button{
+    .button {
     }
     ```
 
@@ -181,15 +188,15 @@
 
     ```scss
     // bad
-    .page_header{
+    .page_header {
     }
 
     // bad
-    .pageHeader{
+    .pageHeader {
     }
 
     // good
-    .page-header{
+    .page-header {
     }
 
     ```
@@ -231,21 +238,21 @@ TODO
   
     ```scss
     // bad
-    .weather{
+    .weather {
       color: #fff;
 
-      .weather__icon{
+      .weather__icon {
         // ...
       }
     }
 
     // good
-    .weather{
-      &{
+    .weather {
+      & {
         color: #fff;
       }
 
-      .weather__icon{
+      .weather__icon {
         // ...
       }
     }
@@ -255,17 +262,17 @@ TODO
 
     ```scss
     // bad
-    .ice-cream{
-      .ice-cream__cone{
-        .ice-cream__cone__wrapper{
+    .ice-cream {
+      .ice-cream__cone {
+        .ice-cream__cone__wrapper {
           // ...
         }
       }
     }
 
     // good
-    .ice-cream{
-      .ice-cream__cone .ice-cream__cone__wrapper{
+    .ice-cream {
+      .ice-cream__cone .ice-cream__cone__wrapper {
          // ...
       }
     }
@@ -275,14 +282,14 @@ TODO
 
     ```scss
     // bad
-    .ice-cream{
-      .desert &{
+    .ice-cream {
+      .desert & {
       }
     }
 
     // good
-    .desert{
-      .ice-cream{
+    .desert {
+      .ice-cream {
       }
     }
 
@@ -296,22 +303,22 @@ TODO
 
     ```scss
     // bad
-    .page{
+    .page {
     }
 
-    .page--home{
+    .page--home {
       @extend .page;
     }
 
     // good
-    %centered-page{
+    %centered-page {
     }
 
-    .page{
+    .page {
       @extend %centered-page;
     }
 
-    .page--home{
+    .page--home {
       @extend %centered-page;
     }
     ```
